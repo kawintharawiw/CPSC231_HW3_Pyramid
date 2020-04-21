@@ -2,14 +2,17 @@
 <pre style="font-family:courier;">
 <script>
 var totalRow = 4;
- for (row=1; row <= totalRow; row++){
- for (col=2; col <= row; col++){
- document.write(" ")
+for (row=1; row <= totalRow; row++)
+{
+    for (col=2; col <= row; col++)
+    {
+    document.write(" ")
 }
 document.write(row+""+row)
-for (col=totalRow; col >= (row + 1); col--){
- document.write("**")
-}
+    for (col=totalRow; col >= (row + 1); col--)
+    {
+    document.write("**")
+    }
 document.write(row+""+row)
 document.write("\n")
 }
